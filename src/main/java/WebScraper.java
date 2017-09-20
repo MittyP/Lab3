@@ -52,12 +52,25 @@ public class WebScraper {
          String wordToCheckUpper = wordToCheck.toUpperCase();
          String wholeTextUpper = wholeText.toUpperCase();
          for (int i = 0; i < wholeTextUpper.length() - wordToCheckUpper.length(); i++) {
-             if (wholeTextUpper.substring(i, i + wordToCheckUpper.length()).equals(wordToCheckUpper)) {
+             if (wholeTextUpper.substring(i, i + wordToCheckUpper.length())
+                     .equals(wordToCheckUpper)) {
                  numSpecificWord++;
              }
          }
          System.out.println("Number of occurrences of " + wordToCheck + ": "
          + numSpecificWord + ", case-insensitive.");
+     }
+     /**
+      *
+      *Counts the number of unique words in a text.
+      *@param wholeText The entire text to parse through.
+      */
+     public static void uniqueWordCounter(final String wholeText) {
+         //find a word
+         //check the word against the word array
+         //if its not in the array, add it to the array
+         //return the length of the array
+
      }
     /**
      * Retrieve contents from a URL and return them as a string.
